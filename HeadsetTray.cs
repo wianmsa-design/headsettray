@@ -33,7 +33,7 @@ namespace HeadsetTray
 
         private const string HeadsetControlPath = @"C:\Program Files\headsetcontrol 0.0.0~continuous-49-g4d57d17\bin\headsetcontrol.exe";
         private const int POLL_OFF_MS = 5000;
-        private const int POLL_ON_MS = 30000;
+        private const int POLL_ON_MS = 10000;
 
         public TrayApp()
         {
