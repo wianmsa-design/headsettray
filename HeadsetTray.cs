@@ -45,7 +45,7 @@ namespace HeadsetTray
             _trayIcon = new NotifyIcon
             {
                 Icon = _iconOff,
-                Text = "Arctis Nova 7: Checking...",
+                Text = "Headset: Checking...",
                 Visible = true,
                 ContextMenuStrip = BuildMenu()
             };
@@ -105,14 +105,14 @@ namespace HeadsetTray
                 if (newState != _lastState && _lastState != HeadsetState.Unknown)
                 {
                     if (newState == HeadsetState.On)
-                        _trayIcon.ShowBalloonTip(3000, "Arctis Nova 7", "Headset connected", ToolTipIcon.None);
+                        _trayIcon.ShowBalloonTip(3000, "Headset", "Connected", ToolTipIcon.None);
                     else
-                        _trayIcon.ShowBalloonTip(3000, "Arctis Nova 7", "Headset disconnected", ToolTipIcon.None);
+                        _trayIcon.ShowBalloonTip(3000, "Headset", "Disconnected", ToolTipIcon.None);
                 }
 
                 _lastState = newState;
                 _trayIcon.Icon = newState == HeadsetState.On ? _iconOn : _iconOff;
-                _trayIcon.Text = newState == HeadsetState.On ? "Arctis Nova 7: Connected" : "Arctis Nova 7: Off";
+                _trayIcon.Text = newState == HeadsetState.On ? "Headset: Connected" : "Headset: Off";
             }
             catch
             {
