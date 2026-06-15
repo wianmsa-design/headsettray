@@ -1,5 +1,4 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net48</TargetFramework>
@@ -11,11 +10,9 @@
     <ApplicationIcon>app.ico</ApplicationIcon>
     <Product>Headset Status</Product>
   </PropertyGroup>
-
   <ItemGroup>
     <EmbeddedResource Include="connected.ico" />
     <EmbeddedResource Include="disconnected.ico" />
-    <None Include="app.ico" />
+    <Content Include="app.ico" />
   </ItemGroup>
-
 </Project>
