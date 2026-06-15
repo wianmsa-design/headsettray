@@ -5,8 +5,6 @@ using System.Reflection;
 using System.Threading;
 using System.Windows.Forms;
 
-[assembly: System.Reflection.AssemblyTitle("Headset Status")]
-[assembly: System.Reflection.AssemblyProduct("Headset Status")]
 namespace HeadsetTray
 {
     static class Program
